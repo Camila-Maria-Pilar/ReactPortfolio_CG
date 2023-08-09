@@ -1,7 +1,14 @@
+/* Projects.module.css */
 
-
-section {
+.Projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding: 20px 0;  /* Gives a bit of top and bottom padding, adjust as desired. */
+}
+
+
+.Project {
+    flex: 0 1 calc(50% - 10px); /* 50% for 2 items per line and -10px to account for the gap */
+    /* Other styles specific to a single project can be added here */
 }

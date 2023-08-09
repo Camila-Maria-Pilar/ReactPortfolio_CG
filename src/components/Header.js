@@ -5,8 +5,8 @@ import React from 'react';
 function Header() {
     return (
         <header className={styles.header}>
-            <h1>Your Name</h1>
-            {/* Any other branding or design elements you'd like */}
+            <h1>Full-Stack Web Developer</h1>
+            
         </header>
     );
 }

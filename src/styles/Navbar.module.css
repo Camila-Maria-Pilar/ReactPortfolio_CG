@@ -1,4 +1,4 @@
-/* src/styles/Navbar.module.css */
+
 
 nav {
     display: flex;
@@ -17,4 +17,10 @@ nav a {
 
 nav a:hover {
     background-color: #555;
+}
+
+.active {
+    color: #007BFF; 
+    font-weight: bold;
+    
 }

@@ -1,18 +1,42 @@
 
-
-.project {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px;
+.Project {
+    position: relative; 
+    overflow: hidden;
+    width: 100%; /* Ensures project takes the full width of the column in the grid. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.project img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
+.Project img {
+    width: 50%;  /* Adjust this to your preference, but ensures the image doesn't quite touch the sides. */
+    height: auto; /* Maintains aspect ratio. */
+    max-width: 100%; /* Ensures image doesn't overflow its container. */
+    object-fit: cover; /* Ensures image covers the entire container without stretching. */
+    border-radius: 10px; /* Adds a little rounding, adjust/remove as desired. */
+    transition: 0.3s; /* smoothens the transition effect when hovering over the image */
+    z-index: 1; 
 }
 
-.project a {
-    margin-right: 10px;
+.Project:hover img {
+    opacity: 0.3; /* dims the image when hovered to give emphasis on the overlaying information */
+}
+
+.ProjectInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the ProjectInfo on the image */
+    opacity: 0; /* makes the ProjectInfo invisible by default */
+    transition: 0.3s; /* smoothens the transition effect when hovering over the image */
+    z-index: 2; /* places the ProjectInfo on top of the image */
+}
+
+.Project:hover .ProjectInfo {
+    opacity: 1; /* makes the ProjectInfo fully visible when the Project is hovered */
+}
+
+.ProjectInfo h2, .ProjectInfo a {
+    margin: 10px 0;
+    color: #0c0c0c; /* set the color of text to white, you can adjust according to your preference */
 }
