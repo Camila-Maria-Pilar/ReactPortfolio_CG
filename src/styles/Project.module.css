@@ -1,0 +1,18 @@
+
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.project a {
+    margin-right: 10px;
+}
