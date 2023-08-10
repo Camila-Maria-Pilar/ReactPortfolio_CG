@@ -6,8 +6,13 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+.Footer a {
+    color: rgb(247, 243, 243); /* change to your preferred color */
+    margin: 0 10px; /* Adjust spacing between icons */
+    font-size: 24px; /* Adjust the size of icons */
+    text-decoration: none; /* Remove default link underlining */
+}
+
+.Footer a:hover {
+    color: #09bb85; /* Color on hover ceo-me color*/
 }

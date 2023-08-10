@@ -1,4 +1,3 @@
-// src/App.jsx
 
 import styles from './styles/App.module.css';
 import React from 'react';
@@ -9,6 +8,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
+import 'font-awesome/css/font-awesome.min.css';
+import './styles/GlobalStyles.module.css';
+
+
 
 function App() {
     const [selectedSection, setSelectedSection] = React.useState("AboutMe"); // default section

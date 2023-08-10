@@ -1,16 +1,19 @@
-import styles from '../styles/Footer.module.css';
-
 import React from 'react';
+import styles from '../styles/Footer.module.css';
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
-            <a href="http://github.com/Camila-Maria-Pilar">GitHub</a>
-            <a href="http://linkedin.com/in/yourname">LinkedIn</a>
-            <a href="http://stackoverflow.com/users/youruserid">Stack Overflow</a>
-            {/* Any other links or information you'd like */}
+        <footer className={styles.Footer}>
+            <a href="https://github.com/Camila-Maria-Pilar" target="_blank" rel="noreferrer">
+                <i className="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/camila-galleguillos/" target="_blank" rel="noreferrer">
+                <i className="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            
         </footer>
     );
 }
 
 export default Footer;
+

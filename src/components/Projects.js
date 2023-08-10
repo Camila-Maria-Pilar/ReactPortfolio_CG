@@ -20,13 +20,13 @@ function Projects() {
         },
         {
             title: "Redeem-Me",
-            imageUrl: "./images/redeem-me.png",
+            imageUrl: "./images/Redeem-Me_App Icon.png",
             deployedUrl: "https://www.redeem-me.app/",
             
         },
         {
             title: "CEO-ME",
-            imageUrl: "./images/ceo-me.png",
+            imageUrl: "./images/CEO ME Logo1.0.png",
             deployedUrl: "http://example.com/project1https://www.ceo-me.com/",
             
         },

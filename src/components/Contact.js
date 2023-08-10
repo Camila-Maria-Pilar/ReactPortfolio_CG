@@ -1,10 +1,11 @@
-// src/components/Contact.js
+import styles from '../styles/Contact.module.css';
 
 import React, { useState } from 'react';
 
 function Contact() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [errors, setErrors] = useState({});
+    const [submitted, setSubmitted] = useState(false);
 
     const validateEmail = email => {
         const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -24,14 +25,25 @@ function Contact() {
         }
     };
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        if (!errors.name && !errors.email && !errors.message) {
+            setFormData({ name: '', email: '', message: '' }); // Clearing the form data
+            setSubmitted(true);
+        }
+    };
+
     return (
-        <section>
-            <form>
+        <section className={styles.Contact}>
+            <form onSubmit={handleSubmit}>
+                
                 <input
                     type="text"
                     name="name"
                     placeholder="Name"
                     onChange={handleChange}
+                    required
+                    value={formData.name}
                 />
                 {errors.name && <span>{errors.name}</span>}
                 
@@ -40,6 +52,8 @@ function Contact() {
                     name="email"
                     placeholder="Email"
                     onChange={handleChange}
+                    required
+                    value={formData.email}
                 />
                 {errors.email && <span>{errors.email}</span>}
                 
@@ -47,11 +61,15 @@ function Contact() {
                     name="message"
                     placeholder="Message"
                     onChange={handleChange}
+                    required
+                    value={formData.message}
                 ></textarea>
                 {errors.message && <span>{errors.message}</span>}
 
-                {/* Submit button and other form components */}
+                <button type="submit">Submit</button>
+
             </form>
+            {submitted && <p>Thanks for your message, we'll be in contact soon!</p>}
         </section>
     );
 }

@@ -1,0 +1,31 @@
+.Contact {
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.Contact form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+}
+
+.Contact input, .Contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.Contact button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Contact button:hover {
+    background-color: #555;
+}

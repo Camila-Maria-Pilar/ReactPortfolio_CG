@@ -12,3 +12,4 @@
     flex: 0 1 calc(50% - 10px); /* 50% for 2 items per line and -10px to account for the gap */
     /* Other styles specific to a single project can be added here */
 }
+
