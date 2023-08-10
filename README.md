@@ -3,10 +3,10 @@ Single-page Portfolio Application built with React.
 This Website Portfolio shows a summary of my main full-stack web and app development solutions. It will be updated as per projects progress.
 
 # Structure of the Website Portfolio:
-### About Me
-### Portfolio
-### Contact
-### Resume
+- About Me
+- Portfolio
+- Contact
+- Resume
 
 ## Mock-Up
 
