@@ -8,26 +8,30 @@ function Projects() {
     const projectList = [
         {
             title: "POD - Proof of Delivery",
+            TechUsed: "JS, Node, Express, MySQL",
             imageUrl: "./images/POD Logo.png",
             deployedUrl: "https://glacial-refuge-34295-405df1b82dc0.herokuapp.com/login",
             githubUrl: "https://github.com/Camila-Maria-Pilar/Project2_POD_CG.git"
         },
         {
             title: "Stock App",
+            TechUsed: "JS, Node, Express",
             imageUrl: "./images/StockApp demo.png",
             deployedUrl: "https://camila-maria-pilar.github.io/StockAppProject1/",
             githubUrl: "https://camila-maria-pilar.github.io/StockAppProject1/"
         },
         {
             title: "Redeem-Me",
-            imageUrl: "./images/Redeem-Me_App Icon.png",
+            TechUsed: "Project Scope Management",
+            imageUrl: "./images/redeem-me.png",
             deployedUrl: "https://www.redeem-me.app/",
             
         },
         {
             title: "CEO-ME",
-            imageUrl: "./images/CEO ME Logo1.0.png",
-            deployedUrl: "http://example.com/project1https://www.ceo-me.com/",
+            TechUsed: "Project Scope Management",
+            imageUrl: "./images/ceo-me.png",
+            deployedUrl: "https://www.ceo-me.com/",
             
         },
     ];

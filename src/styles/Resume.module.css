@@ -1,20 +1,39 @@
 .Resume {
+    
     padding: 2rem;
-    background-color: #fff;
 }
 
-.Resume a {
-    display: block;
-    margin: 1rem 0;
-    color: #0077b5; /* LinkedIn blue, or any color you prefer */
-    text-decoration: none;
+.section {
+    margin-bottom: 2rem; 
 }
 
-.Resume ul {
-    list-style-type: none;
-    padding-left: 0;
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 0.5rem;
 }
 
-.Resume li {
-    padding: 8px 0;
+ul {
+    list-style: none;
+    padding: 0;
 }
+
+li {
+    display: flex; /* To line up icons and text side by side */
+    align-items: center; /* Vertically align the icon with the text */
+    margin-bottom: 0.5rem; /* Adds spacing between list items */
+    gap: 20px;  /* Add this: it will give spacing between the direct children of the flex container */
+}
+
+
+li span {
+    margin-right: 0.5rem; /* Adds spacing between icon and text */
+}
+
+
+.icon {
+    margin-right: 40px; /* Increase this to see if it visibly affects spacing */
+    vertical-align: middle;
+}
+

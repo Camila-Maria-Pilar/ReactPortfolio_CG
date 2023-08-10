@@ -1,42 +1,74 @@
-
 .Project {
-    position: relative; 
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
     overflow: hidden;
-    width: 100%; /* Ensures project takes the full width of the column in the grid. */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f2f2f2; 
 }
+
 
 .Project img {
-    width: 50%;  /* Adjust this to your preference, but ensures the image doesn't quite touch the sides. */
-    height: auto; /* Maintains aspect ratio. */
-    max-width: 100%; /* Ensures image doesn't overflow its container. */
-    object-fit: cover; /* Ensures image covers the entire container without stretching. */
-    border-radius: 10px; /* Adds a little rounding, adjust/remove as desired. */
-    transition: 0.3s; /* smoothens the transition effect when hovering over the image */
-    z-index: 1; 
-}
-
-.Project:hover img {
-    opacity: 0.3; /* dims the image when hovered to give emphasis on the overlaying information */
-}
-
-.ProjectInfo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* center the ProjectInfo on the image */
-    opacity: 0; /* makes the ProjectInfo invisible by default */
-    transition: 0.3s; /* smoothens the transition effect when hovering over the image */
-    z-index: 2; /* places the ProjectInfo on top of the image */
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%, -50%) scale(1.8);
+}
+
+
+.ProjectInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .Project:hover .ProjectInfo {
-    opacity: 1; /* makes the ProjectInfo fully visible when the Project is hovered */
+    opacity: 1;
 }
 
-.ProjectInfo h2, .ProjectInfo a {
+.ProjectInfo h2 {
     margin: 10px 0;
-    color: #0c0c0c; /* set the color of text to white, you can adjust according to your preference */
+}
+
+.ProjectInfo a {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.githubIcon {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) { 
+  
+    .Project {
+        height: auto; 
+    }
+
+    .Project img {
+        
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    .ProjectInfo {
+       
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .ProjectInfo h2 {
+        font-size: 1rem;
+    }
 }
