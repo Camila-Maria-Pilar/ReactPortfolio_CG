@@ -28,9 +28,9 @@ function Projects() {
             
         },
         {
-            title: "CEO-ME",
-            TechUsed: "Project Scope Management",
-            imageUrl: "./images/ceo-me.png",
+            title: "Pre-Start Checks Form",
+            TechUsed: "MERN",
+            imageUrl: "./images/applogo_notbg3.png",
             deployedUrl: "https://www.ceo-me.com/",
             
         },
