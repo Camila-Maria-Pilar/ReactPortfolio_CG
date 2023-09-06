@@ -28,7 +28,7 @@ function Projects() {
             
         },
         {
-            title: "Pre-Start Checks Form",
+            title: "Pre-Start Checks Log Form",
             TechUsed: "MERN",
             imageUrl: "./images/applogo_notbg3.png",
             deployedUrl: "https://www.ceo-me.com/",
